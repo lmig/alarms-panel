@@ -1,0 +1,56 @@
+  <div id="spinner"> </div>
+  <div id="audioContainer" style="display: none;"> 
+    <audio id="audioAlarm">
+    </audio>
+  </div>
+
+
+  <div id="app" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"></div>
+
+  <script type="text/javascript">
+    var initialState = {
+      access: {
+        user: {
+          profile: profile,
+          id: user,
+          domain: domain,
+        },
+        comm: {
+          resources: {
+            hostname: httpip,
+            port: httpport,
+            home: httpd_home,
+            apli: apli,
+            confFile: "alarms_panel_config.json",
+            servicePath: apli + "/alarms_panel_settings_manager.cgi"
+          },
+          channel: {
+            hostname: host,
+            port: port
+          },
+        },
+        panelName: panalName,
+      }
+    }
+  </script>
+
+  <script type="text/javascript" src="assets/moment/2.18.1/js/moment.min.js"></script>
+  <script type="text/javascript" src="assets/jquery/3.2.0/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/w2ui/1.5.rc1/js/w2ui.js"></script>
+  <script type="text/javascript" src="scripts/Customw2ui.js"></script>
+  <script type="text/javascript" src="assets/asevented/0.4.6/js/asevented.min.js"></script>
+
+  <script type="text/javascript" src="assets/js-logger/1.3.0/js/logger.min.js"></script>
+
+  <script type="text/javascript" src="scripts/MessageBus.js"></script>
+  <script type="text/javascript" src="scripts/Store.js"></script>
+  <script type="text/javascript" src="scripts/AlarmsChannelService.js"></script>
+  <script type="text/javascript" src="scripts/AlarmsResourcesService.js"></script>
+  <script type="text/javascript" src="scripts/AlarmsView.js"></script>
+  <script type="text/javascript" src="scripts/StatisticsView.js"></script>
+  <script type="text/javascript" src="scripts/FilterManagementView.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+
+<!-- Linea administrativa CVS -->
+<!-- $Id: AlarmsPanel.html,v 1.8 2017/09/11 12:51:55 lmibanez Exp $ -->

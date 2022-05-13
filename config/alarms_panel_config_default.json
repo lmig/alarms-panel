@@ -1,0 +1,371 @@
+{
+    "fields": {
+        "columns": [
+            {
+                "caption": "Severity",
+                "field": "nivel",
+                "type": "enum",
+                "options": {
+                   "items": [
+                     { "id": "WARN", "text": "WARN" },
+                     { "id": "MIN",  "text": "MIN" },
+                     { "id": "MAJ",  "text": "MAJ" },
+                     { "id": "CRIT", "text": "CRIT" }
+                   ],
+                   "max": 4
+                },
+                "size": "7%",
+                "hidden": false,
+                "sortable": true,
+                "searchable": true,
+                "resizable": true,
+                "hideable": true,
+                "info": true
+            },
+            {
+                "caption": "Id",
+                "field": "id",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Type",
+                "field": "tipo",
+                "type": "text",
+                "size": "18%",
+                "hidden": false,
+                "sortable": true,
+                "searchable": true,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Source",
+                "field": "userLabelObj",
+                "type": "text",
+                "size": "10%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": true,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Act. Date",
+                "field": "fechaAct",
+                "type": "datetime",
+                "size": "12%",
+                "hidden": false,
+                "sortable": true,
+                "searchable": true,
+                "searchOperator": "between",
+                "resizable": true,
+                "hideable": true,
+                "render": "datetime:yyyy-mm-dd|hh24:mm:ss"
+            },
+            {
+                "caption": "Text",
+                "field": "texto",
+                "type": "text",
+                "size": "45%",
+                "hidden": false,
+                "sortable": true,
+                "searchable": true,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "User",
+                "field": "usuario",
+                "type": "text",
+                "size": "8%",
+                "hidden": false,
+                "sortable": true,
+                "searchable": true,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Estado",
+                "field": "estado",
+                "type": "enum",
+                "options": {
+                  "items": [
+                    { "id": "ACT", "text": "ACT" },
+                    { "id": "CLR", "text": "CLR" },
+                    { "id": "VER", "text": "VER" },
+                    { "id": "ACK", "text": "ACK" }
+                  ],
+                  "max": 4
+                },
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": true,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Texto Adicional",
+                "field": "textoadic",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Categoria",
+                "field": "categoria",
+                "type": "enum",
+                "options": {
+                  "items": [
+                    { "id": "NE", "text": "NE" },
+                    { "id": "N", "text": "N" },
+                    { "id": "S", "text": "S" },
+                    { "id": "B", "text": "B" }
+                  ],
+                  "max": 4
+                },
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Clave",
+                "field": "clave",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Sistema Fuente",
+                "field": "agentSource",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Objeto Fuente",
+                "field": "objeto",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": true,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Detalles del Objeto Fuente",
+                "field": "objectSourceDetails",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Estado Operacional",
+                "field": "objectOperStatus",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Id Externo",
+                "field": "externalId",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Naturaleza",
+                "field": "alarmKind",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Fecha Reconocimiento",
+                "field": "alarmAckDate",
+                "type": "datetime",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "searchOperator": "between",
+                "resizable": true,
+                "hideable": true,
+                "render": "datetime:yyyy-mm-dd|hh24:mm:ss"
+            },
+            {
+                "caption": "Fecha Cese",
+                "field": "fechaCese",
+                "type": "datetime",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "searchOperator": "between",
+                "resizable": true,
+                "hideable": true,
+                "render": "datetime:yyyy-mm-dd|hh24:mm:ss"
+            },
+            {
+                "caption": "Correlacion",
+                "field": "correlatedAlarm",
+                "type": "list", 
+                "options": { "items": ["Y", "N"] },
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Info Correlacion",
+                "field": "correlatedAlarmInfo",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Umbral",
+                "field": "alarmThreshold",
+                "type": "int",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Clave Ext",
+                "field": "externalKey",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Fuente Externa",
+                "field": "externalSource",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            },
+            {
+                "caption": "Fecha ACT Externa",
+                "field": "externalDate",
+                "type": "datetime",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "searchOperator": "between",
+                "resizable": true,
+                "hideable": true,
+                "render": "datetime:yyyy-mm-dd|hh24:mm:ss"
+            },
+            {
+                "caption": "Acciones",
+                "field": "actions",
+                "type": "text",
+                "size": "3%",
+                "hidden": true,
+                "sortable": true,
+                "searchable": false,
+                "resizable": true,
+                "hideable": true
+            }
+        ],
+        "initialSortCriteria": {"field": "fechaAct", "direction": "desc"}
+    },
+    "buttons": {
+        "recharge": true, 
+        "ack": true,
+        "hide": true,
+        "cease": true,
+        "verify": true,
+        "unack": true,
+        "filter": true,
+        "layout": true,
+        "statistics": true,
+        "unsort": true
+    },
+    "useVerifiedState": false,
+    "comms": {
+        "reconnectRetries": 0,
+        "reconnectTimeWait": 5000,
+        "heartbeatFrecuency": 30000
+    },
+    "layout": "style.css",
+    "sounds": {
+      "enabled": true,
+      "CRIT": {
+        "audio": "beep-01a.wav",
+        "volume": "0.75"
+      },
+      "MAJ": {
+        "audio": "beep-01a.wav",
+        "volume": "0.50"
+      },
+      "MIN": {
+        "audio": "beep-01a.wav",
+        "volume": "0.25"
+      }
+    },
+    "locale": {
+        "current": "es-es",
+        "available": [
+            "es-es",
+            "en-en"
+        ]
+    }
+}
